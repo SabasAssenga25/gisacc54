@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using External CSS</title>
+<style>
+.rounded-line-button {
+  padding: 10px 20px;
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 20px; /* Roundness of the button */
+  background-color: transparent;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rounded-line-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.power-off {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.line {
+  width: 40px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+
+.target-image {
+  width: 150px;
+  height: 150px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.target-image::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-effect {
+  font-size: 24px;
+}
+
+.white-bg {
+  background-color: white;
+  color: black;
+  padding: 50px 30px;
+}
+
+.black-bg {
+  background-color: black;
+  color: white;
+  padding: 50px 30px;
+}
+</style>
+</head>
+<body>
+<div class="text-effect">
+  <span class="white-bg">hello</span>
+  <span class="black-bg">word</span>
+  </div>
+  <div></div>
+  <P></P>
+  <P></P>
+  
+<div class="target-image"></div>
+
+<div class="power-off">
+  <div class="circle"></div>
+  <div class="line"></div>
+</div>
+
+<button class="rounded-line-button"></button>
+
+
+</body>
+</html>

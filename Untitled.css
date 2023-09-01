@@ -1,0 +1,35 @@
+.box{
+  border: 2px yellow solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.power{
+  background-color: yellow;
+  width: 15px;
+  height: 70px;
+  border: white 8px solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  bottom: 50px;
+  right: 80px;
+}
+
+.circle{
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: yellow solid 15px;
+  position: relative;
+
+}
+  
+
+

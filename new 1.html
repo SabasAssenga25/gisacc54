@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise cSS-1</title>
+<style>
+body {
+background-color: white;
+color: white;
+padding: 20px;
+font-family: Arial, Verdana, sans-serif;}
+p {
+padding: 5px;
+margin: 0px;}
+p.zero {
+background-color: rgb(238,62,128);}
+p.one {
+background-color: rgb(244,90,139);}
+p.two {
+background-color: rgb(243,106,152);}
+p.three {
+background-color: rgb(244,123,166);}
+
+p.flipped-text {
+  font-size: 24px;
+  color:black;
+}
+
+.upside-down {
+  display: inline-block;
+  transform: rotate(180deg);
+ }
+ 
+p.five {
+font-size: 36px;
+background: linear-gradient(to left, transparent, black);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: fade-in 6s linear forwards;
+}
+@keyframes fade-in{
+0%{
+background-position: -100%;
+}
+100%{
+background-position: 100%;
+}}
+
+p.six {
+font-size: 36px;
+font-weight: bold;
+color: white;
+-webkit-text-stroke: 2px black;}
+
+p.seven {
+color: black;}
+
+p.eight {
+color: black;}
+
+p.nine {
+color:  black;}
+
+</style>
+</head>
+<body>
+<p class="nine">Hello World</p>
+
+<p class="eight">Hello</p>
+<p class="seven">World</p>
+
+<p class="six">Hello World</p>
+
+<p class="five">Hello World</p>
+
+<p class="flipped-text">
+  Hello <span class="upside-down">word</span>
+</p>
+
+<p class="three">Hello World</p>
+<p class="two">Hello World</p>
+<p class="one">Hello World</p>
+<p class="zero">Hello World</p>
+</body>
+</html>
